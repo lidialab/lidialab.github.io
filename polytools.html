@@ -129,7 +129,7 @@
                      <legend>Temi Twenty</legend>                     
                         <div>
                         <label>
-                           <input type=checkbox name="twentytwentytwo" value="twentytwentythree">twentytwentythree</label>
+                           <input type=checkbox name="twentytwentythree" value="twentytwentythree">twentytwentythree</label>
                         </div>
                         <div>
                         <label>
@@ -679,6 +679,10 @@ function eseguiRicercaNeiProgetti() {
                primaParteURL = "https://translate.wordpress.org/projects/wp-themes/twentytwentytwo";
                void( window.open( primaParteURL + primaParteFiltro + encodeURIComponent( termineWP ) + secondaParteFiltro ) ) ;
             }
+            if ( document.querySelector( "div input[name='twentytwentythree']" ).checked || document.querySelector( "div input[name='tutti']" ).checked ) {
+               primaParteURL = "https://translate.wordpress.org/projects/wp-themes/twentytwentythree";
+               void( window.open( primaParteURL + primaParteFiltro + encodeURIComponent( termineWP ) + secondaParteFiltro ) ) ;
+            }
             if ( document.querySelector( "div input[name='wordcamp']" ).checked || document.querySelector( "div input[name='tutti']" ).checked ) {
                primaParteURL = "https://translate.wordpress.org/projects/meta/wordcamp";
                void( window.open( primaParteURL + primaParteFiltro + encodeURIComponent( termineWP ) + secondaParteFiltro ) ) ;
@@ -773,6 +777,7 @@ function apriProgettiPrincipali() {
    //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/jetpack') );
 
    // Temi WP
+   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentythree') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentytwo') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentyone') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwenty') );
