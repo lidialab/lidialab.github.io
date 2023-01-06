@@ -385,6 +385,10 @@
                         <label>
                            <input type=checkbox name="italianourgente" value="italianourgente">Italiano Urgente</label>
                      </div>
+                     <div>
+                        <label>
+                           <input type=checkbox name="visuwords" value="visuwords">VisuWords</label>
+                     </div>
                   </fieldset>
                </form>
             </div>
@@ -440,6 +444,8 @@
                <li><a href="https://en.oxforddictionaries.com">UK Oxford dictionaries</a></li>
                <li><a href="https://en.oxforddictionaries.com/definition/us/modal">US Oxford dictionaries</a></li>
                <li><a href="https://www.collinsdictionary.com/it">Collins dictionary</a></li>
+               <li><a href="https://www.ldoceonline.com/">Longman</a></li>
+               <li><a href="https://www.macmillandictionary.com/">Macmillan</a></li>
             </ul>
          </section>
       </div>
@@ -504,6 +510,14 @@ function eseguiRicercaEn() {
 
       void( window.open( 'http://www.italianourgente.it/', 'Italiano Urgente', caratteristicheFinestra ) );
    }
+
+
+   if ( document.querySelector( "div input[name='visuwords']" ).checked ) {
+
+      void( window.open( 'http://https://visuwords.com/checkout/', 'Visu Words', caratteristicheFinestra ) );
+   }
+
+   
    if ( document.querySelector( "div input[name='glossarioWPita']" ).checked ) {
 
       void( window.open( 'https://translate.wordpress.org/locale/it/default/glossary', 'Glossario Polyglots italiani', caratteristicheFinestra ) );
