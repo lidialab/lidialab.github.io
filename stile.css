@@ -1,0 +1,52 @@
+   * {
+      color: #f1f2f1;
+      font-family: verdana, sans-serif;
+   }
+
+   body {
+      font-size: 1.125rem;
+      background-color: #464646;
+   }
+
+   button {
+      background-color: #464646;
+      border-color: #f1f2f1;
+      border-style: solid;
+      padding: 0.5em 1em;
+      margin: 0.25em;
+   }
+
+   input {
+      background-color: #464646;
+      border-color: #f1f2f1;
+      border-style: solid;
+      padding: 0.15em;
+      margin: 0.25em;
+   }
+
+   .box {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+   }
+
+   .flex-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .flex-elem {
+      min-width: 350px;
+      max-width: 350px;
+      flex: 1;
+      border: 1px solid #d54e21;
+      padding: 1em;
+   }
+/*
+======================================================
+    WP-like Colors Palette
+======================================================
+    Blue    #21759b     RGB 33, 117, 155
+    Orange  #d54e21     RGB 213, 78, 33
+    Grey    #464646     RGB 70, 70, 70
+*/
