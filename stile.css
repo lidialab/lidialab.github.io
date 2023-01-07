@@ -9,17 +9,20 @@ body {
     font-size: 1.125rem;
     background-color: #464646;
 }
-
+hr {
+    margin: 22px 7px;
+}
 h1, h2, h3, h4, h5, h6 {
     color: #d54e21;
     margin-top: 9px;
+    margin-bottom: 9px;
 }
 p {
     margin: 13px 7px;
 }
 
 li {
-    margin: 0.75em 2em;
+    margin: 0.5em 2em;
 }
 
 .ora {
@@ -69,6 +72,7 @@ li {
       flex: 1;
       border: 1px solid #d54e21;
       padding: 1em;
+      margin-bottom: 0.5em;
    }
 
 /*

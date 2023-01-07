@@ -9,7 +9,6 @@
 </head>
 
 <body>
-   <h1>Lista di controllo per discutere un termine</h1>
    <div class="flex-box">
       <div class="flex-elem">
          <section>
@@ -17,7 +16,18 @@
             <ul>
                <li><a href="https://translate.wordpress.org/locale/it/default/wp/dev">Core</a></li>
             </ul>
-
+            <h2>Temi Twenty-...</h2>
+            <button type=button onclick="apriTemiTwenty()">
+               Apri tutti i temi Twenty-...
+            </button>
+            <h2>Plugin principali</h2>
+            <button type=button onclick="apriPluginPrincipali()">
+               Apri tutti i plugin pincipali...
+            </button>
+            <h2>META</h2>
+            <button type=button onclick="apriProgettiMeta()">
+               Apri tutti i progetti META...
+            </button>
             <h2>Progetti principali</h2>
             <button type=button onclick="apriProgettiPrincipali()">
                Apri TUTTI (!) i progetti principali...
@@ -210,27 +220,6 @@
             </div>
             <button type=button onclick="eseguiRicercaNeiProgetti()">
                Scatena la ricerca
-            </button>
-         </section>
-      </div>
-
-      <div class="flex-elem">
-         <section>
-            <h2>Temi Twenty-...</h2>
-            <button type=button onclick="apriTemiTwenty()">
-               Apri tutti i temi Twenty-...
-            </button>
-            <h2>Plugin principali</h2>
-            <button type=button onclick="apriPluginPrincipali()">
-               Apri tutti i plugin pincipali...
-            </button>
-         </section>
-      </div>
-      <div class="flex-elem">
-         <section>
-            <h2>META</h2>
-            <button type=button onclick="apriProgettiMeta()">
-               Apri tutti i progetti META...
             </button>
          </section>
       </div>
@@ -611,8 +600,10 @@ function apriPluginPrincipali() {
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/classic-editor') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/health-check') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/wordpress-importer') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/buddypress') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/bbpress') );
+   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/buddypress') );
+   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/bbpress') );
+   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/akismet') );
+   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/jetpack') );
 }
 
 function apriProgettiMeta() {
@@ -640,47 +631,18 @@ function apriProgettiPrincipali() {
    void( window.open( 'https://translate.wordpress.org/locale/it/default/apps/android/') );
 
    // Meta
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/wordpress-org/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/plugins-v3/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/themes/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/rosetta/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/p2-breathe/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/o2') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/forums/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/get-involved/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/pattern-directory/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/wordcamp/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/openverse/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/browsehappy/') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/meta/learn-wordpress/') );
+   apriProgettiMeta();
 
    // Pattern
    void( window.open( 'https://translate.wordpress.org/locale/it/default/patterns/core/') );
 
    // Plugin WP
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/gutenberg') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/health-check') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/wordpress-importer') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/classic-editor') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/buddypress') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/bbpress') );
-   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/akismet') );
-   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/jetpack') );
+   apriPluginPrincipali();
 
    // Temi WP
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentythree') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentytwo') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentyone') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwenty') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentynineteen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentyseventeen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentysixteen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentyfifteen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentyfourteen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentythirteen') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwelve') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentyeleven') );
-   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentyten') );
+   apriTemiTwenty();
+
+   // Temi WP vecchi
    //void( window.open( 'https://wordpress.org/themes/classic/') );
    //void( window.open( 'https://wordpress.org/themes/default') );
 }
