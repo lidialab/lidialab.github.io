@@ -65,6 +65,7 @@
                <li>&#128285; <a href="https://translate.wordpress.org/locale/it/default/stats/plugins/">TOP ~400 plugin</a></li>
                <li>&#128285; <a href="https://translate.wordpress.org/locale/it/default/stats/themes/">TOP ~400 temi</a></li>
                <li>&#128227; <a href="https://make.wordpress.org/polyglots/tag/it_IT/?resolved=unresolved">Richieste PTE per l'italiano</a></li>
+               <li><a href="https://www.php.net/manual/en/datetime.format.php">Formato date PHP</a></li>
             </ul>
 
             <h3>Handbook dei Polyglots italiani</h3>
@@ -115,6 +116,15 @@
             </ul>
          </div>
          <div class="flex-elem">
+            <h4>Altre risorse</h4>
+            <ul>
+               <li><a href="http://www.italianourgente.it/">Italiano Urgente</a></li>
+               <li><a href="https://www.chicagomanualofstyle.org/home.html/">The Chicago Manual of Style Online</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="flex-box">
+         <div class="flex-elem">
             <h4>Dizionari</h4>
             <ul>
                <li><a href="https://www.wordreference.com/enit/">WordReference</a></li>
@@ -135,8 +145,8 @@
                <li>...</li>
             </ul>
          </div>
+      </div>
    </div>
-
    <div>
       <h3>&#127384; Segnalare problemi o idee per Translate</h3>
       <ul>
@@ -157,7 +167,7 @@
       <div class="flex-elem">
          <h4>CORE</h4>
          <a href="https://translate.wordpress.org/locale/it/default/wp/dev">Core - tutti i sottoprogetti (corrente)</a>
-         <h5>CORE - sottoprogetti</h4>
+         <h5>CORE - sottoprogetti</h5>
          <div id="sez-core">Sezione core</div>
 
          <h4>Plugin principali</h4>
@@ -312,11 +322,11 @@
                   <legend>Strumenti disponibili online</legend>
                   <div>
                      <label>
-                        <input type=checkbox name="glossarioWPita" value="glossarioWPita" checked="checked">Glossario Polyglots italiani</label>
+                        <input type=checkbox name="glossarioWPita" value="glossarioWPita">Glossario Polyglots italiani</label>
                   </div>
                   <div>
                      <label>
-                        <input type=checkbox name="consistencytool" value="consistencytool">Consistency Tool</label>
+                        <input type=checkbox name="consistencytool" value="consistencytool" checked="checked">Consistency Tool</label>
                   </div>
                   <div>
                      <label>
@@ -325,6 +335,10 @@
                   <div>
                      <label>
                         <input type=checkbox name="portalemicrosoft" value="portalemicrosoft">Portale Microsoft</label>
+                  </div>
+                  <div>
+                     <label>
+                        <input type=checkbox name="transvisionmoz" value="transvisionmoz">Transvision Moz FR</label>
                   </div>
                   <div>
                      <label>
@@ -343,9 +357,6 @@
                         <input type=checkbox name="alternativeaa" value="alternativeaa">Alternative agli anglicismi</label>
                   </div>
                   <div>
-                     <label>
-                        <input type=checkbox name="italianourgente" value="italianourgente">Italiano Urgente</label>
-                  </div>
                   <div>
                      <label>
                         <input type=checkbox name="visuwords" value="visuwords">VisuWords</label>
@@ -395,6 +406,7 @@ function eseguiRicercaEn() {
    var termineEn = document.querySelector( "div input[name='termineEn']" ).value;
    var usaPopup = document.querySelector( "div input[name='popup-eng']" ).checked;
 
+
    /* aggiungere controllo input */
 
    if ( !termineEn ) { 
@@ -414,25 +426,47 @@ function eseguiRicercaEn() {
          if ( usaPopup ) {
             void( window.open( 'http://www.wordreference.com/enit/' + encodeURIComponent( termineEn ) + '?v=pop', 'WordReference', caratteristicheFinestra ) );
          }
+         else  {
+            void( window.open( 'http://www.wordreference.com/enit/' + encodeURIComponent( termineEn ) + '?v=pop' ) );
+         }
       }
 
       if ( document.querySelector( "div input[name='consistencytool']" ).checked ) {
          if ( usaPopup ) {
-         void( window.open( 'https://translate.wordpress.org/consistency?search=' + encodeURIComponent( termineEn ) + '&set=it%2Fdefault&project=', 'Consistency Tool', caratteristicheFinestra ) );
+            void( window.open( 'https://translate.wordpress.org/consistency?search=' + encodeURIComponent( termineEn ) + '&set=it%2Fdefault&project=', 'Consistency Tool', caratteristicheFinestra ) );
+         }
+         else  {
+            void( window.open( 'https://translate.wordpress.org/consistency?search=' + encodeURIComponent( termineEn ) + '&set=it%2Fdefault&project=' ) );
          }
       }
 
 
       if ( document.querySelector( "div input[name='portalemicrosoft']" ).checked ) {
          if ( usaPopup ) {
-         void( window.open( 'https://www.microsoft.com/it-it/language/Search?&searchTerm=' + encodeURIComponent( termineEn ) + '&langID=italiano&Source=true&productid=Tutti%20i%20prodotti', 'Portale Linguistico Microsoft', caratteristicheFinestra ) );
+            void( window.open( 'https://www.microsoft.com/it-it/language/Search?&searchTerm=' + encodeURIComponent( termineEn ) + '&langID=408&Source=true&productid=undefined', 'Portale Linguistico Microsoft', caratteristicheFinestra ) );
          }
+         else  {
+          void( window.open( 'https://www.microsoft.com/it-it/language/Search?&searchTerm=' + encodeURIComponent( termineEn ) + '&langID=408&Source=true&productid=undefined' ) );
+         }         
       }
+
+     if ( document.querySelector( "div input[name='transvisionmoz']" ).checked ) {
+         if ( usaPopup ) {
+            void( window.open( 'https://transvision.mozfr.org/?recherche=' + encodeURIComponent( termineEn ) + '&repo=all_projects&sourcelocale=en-US&locale=it&search_type=strings', 'Transvision Moz FR', caratteristicheFinestra ) );
+         }
+         else  {
+          void( window.open( 'https://transvision.mozfr.org/?recherche=' + encodeURIComponent( termineEn ) + '&repo=all_projects&sourcelocale=en-US&locale=it&search_type=strings' ) );
+         }         
+      }
+
 
 
       if ( document.querySelector( "div input[name='alternativeaa']" ).checked ) {
          if ( usaPopup ) {
-         void( window.open( 'https://aaa.italofonia.info/?s=' + encodeURIComponent( termineEn ), 'Alternative agli anglicismi', caratteristicheFinestra ) );
+            void( window.open( 'https://aaa.italofonia.info/?s=' + encodeURIComponent( termineEn ), 'Alternative agli anglicismi', caratteristicheFinestra ) );
+         }
+         else  {
+            void( window.open( 'https://aaa.italofonia.info/?s=' + encodeURIComponent( termineEn ) ) );
          }
       }
 
@@ -441,11 +475,17 @@ function eseguiRicercaEn() {
          if ( usaPopup ) {
             void( window.open( 'https://www.merriam-webster.com/dictionary/' + encodeURIComponent( termineEn ), 'Merriam Webster', caratteristicheFinestra ) );
          }
+         else  {
+            void( window.open( 'https://www.merriam-webster.com/dictionary/' + encodeURIComponent( termineEn ) ) );
+         }
       }
 
       if ( document.querySelector( "div input[name='wiktionary']" ).checked ) {
          if ( usaPopup ) {
             void( window.open( 'https://en.wiktionary.org/wiki/' + encodeURIComponent( termineEn ), 'Wiktionary', caratteristicheFinestra ) );
+         }
+         else {
+            void( window.open( 'https://en.wiktionary.org/wiki/' + encodeURIComponent( termineEn ) ) );
          }
       }
 
@@ -454,21 +494,20 @@ function eseguiRicercaEn() {
          if ( usaPopup ) {
             void( window.open( 'https://www.linguee.it/italiano-inglese/search?source=auto&query=' + encodeURIComponent( termineEn ), 'Portale Linguee', caratteristicheFinestra ) );
          }
+         else  {
+            void( window.open( 'https://www.linguee.it/italiano-inglese/search?source=auto&query=' + encodeURIComponent( termineEn ) ) );
+         }
       }
 
    }
-
-   if ( document.querySelector( "div input[name='italianourgente']" ).checked ) {
-      if ( usaPopup ) {
-         void( window.open( 'http://www.italianourgente.it/', 'Italiano Urgente', caratteristicheFinestra ) );
-      }
-   }
-
 
    if ( document.querySelector( "div input[name='visuwords']" ).checked ) {
       if ( usaPopup ) {
-         void( window.open( 'http://https://visuwords.com/checkout/', 'Visu Words', caratteristicheFinestra ) );
+         void( window.open( 'http://visuwords.com/' + encodeURIComponent( termineEn ), 'Visu Words', caratteristicheFinestra ) );
       }
+         else  {
+         void( window.open( 'http://visuwords.com/' + encodeURIComponent( termineEn ) ) );
+         }
    }
 
    
@@ -476,6 +515,9 @@ function eseguiRicercaEn() {
       if ( usaPopup ) {
          void( window.open( 'https://translate.wordpress.org/locale/it/default/glossary', 'Glossario Polyglots italiani', caratteristicheFinestra ) );
       }
+         else  {
+         void( window.open( 'https://translate.wordpress.org/locale/it/default/glossary' ) );
+         }
    }
 }
 
