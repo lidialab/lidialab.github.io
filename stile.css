@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./asset/bg-jason-dent-unsplash.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 body {
     font-size: 1.125rem;
     background-color: #464646;
