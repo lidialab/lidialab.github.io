@@ -30,6 +30,7 @@ function apriPluginPrincipali() {
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/classic-editor') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/health-check') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/wordpress-importer') );
+   //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/preferred-languages') );
    //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/buddypress') );
    //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/bbpress') );
    //void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-plugins/akismet') );
@@ -96,7 +97,7 @@ nomiTemiWPorg = ["twentytwentythree","twentytwentytwo","twentytwentyone","twenty
 
 nomiPluginWPorg = ["gutenberg","classic-editor","health-check","wordpress-importer"]
 
-nomiPluginRilevanti = ["bbpress","buddypress"]
+nomiPluginRilevanti = ["bbpress","buddypress", "preferred-languages"]
 
 nomiMeta = ["wordpress-org","plugins-v3","themes","rosetta","p2-breathe","o2","forums","get-involved","pattern-directory","wordcamp","openverse","browsehappy","learn-wordpress"];
 
