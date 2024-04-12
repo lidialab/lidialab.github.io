@@ -10,6 +10,7 @@ function apriSottoProgettiCore() {
 }
 
 function apriTemiTwenty() {
+   void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentyfour') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentythree') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentytwo') );
    void( window.open( 'https://translate.wordpress.org/locale/it/default/wp-themes/twentytwentyone') );
@@ -92,7 +93,7 @@ const myLoc = "it";
 
 //nomiSottoProjCore = ["", "cc", "admin","admin/network"]
 
-nomiTemiWPorg = ["twentytwentythree","twentytwentytwo","twentytwentyone","twentytwenty",
+nomiTemiWPorg = ["twentytwentyfour", "twentytwentythree","twentytwentytwo","twentytwentyone","twentytwenty",
 "twentynineteen","twentyseventeen","twentysixteen","twentyfifteen","twentyfourteen","twentythirteen","twentytwelve","twentyeleven","twentyten"];
 
 nomiPluginWPorg = ["gutenberg","classic-editor","health-check","wordpress-importer"]

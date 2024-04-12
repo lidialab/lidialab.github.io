@@ -16,9 +16,8 @@
 
 <!--  *******************************************************************************  -->
 <hr>
-ATTENZIONE: quando scatenate le ricerche vengono aperte delle nuove tab nel vostro browser, la prima volta il vostro browser vi chiederà 
-<hr>
 <!--  *******************************************************************************  -->
+
    <h1>WP Polyglots' stuff</h1>
    <h2>Risorse WP generiche</h2>
    <div class="flex-box">
@@ -162,7 +161,10 @@ ATTENZIONE: quando scatenate le ricerche vengono aperte delle nuove tab nel vost
       </ul>
    </div>
 
+
 <!--  *******************************************************************************  -->
+<hr>
+ATTENZIONE: quando scatenate le ricerche vengono aperte delle nuove tab nel vostro browser, la prima volta il vostro browser vi chiederà 
 <hr>
 <!--  *******************************************************************************  -->
 
@@ -717,6 +719,10 @@ function eseguiRicercaNeiProgetti() {
             }
             if ( document.querySelector( "div input[name='twentytwentythree']" ).checked || document.querySelector( "div input[name='tutti']" ).checked ) {
                primaParteURL = "https://translate.wordpress.org/projects/wp-themes/twentytwentythree";
+               void( window.open( primaParteURL + primaParteFiltro + encodeURIComponent( termineWP ) + secondaParteFiltro ) ) ;
+            }
+            if ( document.querySelector( "div input[name='twentytwentyfour']" ).checked || document.querySelector( "div input[name='tutti']" ).checked ) {
+               primaParteURL = "https://translate.wordpress.org/projects/wp-themes/twentytwentyfour";
                void( window.open( primaParteURL + primaParteFiltro + encodeURIComponent( termineWP ) + secondaParteFiltro ) ) ;
             }
             if ( document.querySelector( "div input[name='wordcamp']" ).checked || document.querySelector( "div input[name='tutti']" ).checked ) {
